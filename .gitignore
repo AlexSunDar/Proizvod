@@ -5,3 +5,7 @@ Proizvod/bin/
 Proizvod/obj/
 Proizvod/fonts/
 Proizvod/Scripts
+
+#ignore file type
+
+*.resx
