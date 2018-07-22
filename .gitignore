@@ -1,0 +1,7 @@
+#ignore folder
+
+packages/
+Proizvod/bin/
+Proizvod/obj/
+Proizvod/fonts/
+Proizvod/Scripts

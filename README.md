@@ -1,0 +1,1 @@
+Slobodno za komercijalnu upotrebu
