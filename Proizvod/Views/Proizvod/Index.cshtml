@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Proizvod.Models.ProizvodModel>
+﻿@model IEnumerable<Proizvod.Model.ProizvodModel>
 
 @{
     ViewBag.Title = "Index";
@@ -6,9 +6,14 @@
 
 <h2>Index</h2>
 
+
 <p>
-    @Html.ActionLink("Unos", "Kreiraj")
+    @Html.ActionLink("Unos", "Kreiraj")    
 </p>
+<p>
+    @Html.ActionLink("JSON dokument", "Index", "Json")
+</p>
+
 <table class="table">
     <tr>
         <th>

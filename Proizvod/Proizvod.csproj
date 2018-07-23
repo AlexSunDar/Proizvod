@@ -56,6 +56,10 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -119,9 +123,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.ApplicationInsights">
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
     </Reference>
@@ -148,21 +149,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\JsonController.cs" />
     <Compile Include="Controllers\ProizvodController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807220319389_test.cs" />
-    <Compile Include="Migrations\201807220319389_test.Designer.cs">
-      <DependentUpon>201807220319389_test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807221129582_aca.cs" />
-    <Compile Include="Migrations\201807221129582_aca.Designer.cs">
-      <DependentUpon>201807221129582_aca.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807221229453_aca1.cs" />
-    <Compile Include="Migrations\201807221229453_aca1.Designer.cs">
-      <DependentUpon>201807221229453_aca1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\ProizvodModel.cs" />
@@ -210,6 +200,7 @@
     <Content Include="Views\Proizvod\Prikaz.cshtml" />
     <Content Include="Views\Proizvod\Izmena.cshtml" />
     <Content Include="Views\Proizvod\Index.cshtml" />
+    <Content Include="Views\Json\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -226,17 +217,6 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807220319389_test.resx">
-      <DependentUpon>201807220319389_test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807221129582_aca.resx">
-      <DependentUpon>201807221129582_aca.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807221229453_aca1.resx">
-      <DependentUpon>201807221229453_aca1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

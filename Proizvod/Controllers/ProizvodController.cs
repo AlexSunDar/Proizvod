@@ -6,7 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Proizvod.Models;
+using Newtonsoft.Json;
+using Proizvod.Model;
 using Proizvod.Persistance;
 
 namespace Proizvod.Controllers

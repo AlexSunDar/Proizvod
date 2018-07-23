@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace Proizvod.Models
+namespace Proizvod.Model
 {
     [Table("Proizvod")]
     public class ProizvodModel
