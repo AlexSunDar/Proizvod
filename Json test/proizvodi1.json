@@ -1,0 +1,21 @@
+[
+	{
+		"id": 1,
+		"naziv" : "Coko-Rice",
+		"opis" : "Cokolada sa rizom, 150 g",
+		"kategorija" : "Cokolada",
+		"proizvodjac" : "Simka",
+		"dobavljac" : "D.O.O Dobavljac",
+		"cena" : 100
+	}, 
+	
+	{
+		"id": 2,
+		"naziv" : "Nela-Lesnik",
+		"opis" : "Nela lesnik napolitanka sa krispi posipom, 175 g",
+		"kategorija" : "Napolitanka",
+		"proizvodjac" : "Soko Stark",
+		"dobavljac" : "D.O.O Dobavljac",
+		"cena" : 105
+	}
+]
